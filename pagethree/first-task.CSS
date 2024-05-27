@@ -1,0 +1,15 @@
+.container{
+    margin: auto;
+    text-align: center;
+}
+th{
+    background-color: yellow;
+    text-align: right;
+}
+table{
+    text-align: left;
+}
+#f1{
+    background-color: antiquewhite;
+    text-align: center;
+}
