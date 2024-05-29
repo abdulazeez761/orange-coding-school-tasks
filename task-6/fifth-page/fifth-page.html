@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        border: 20px solid orange;
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: first baseline;
+        font-size: 8em;
+        height: 100%;
+        color: white;
+        margin: 0;
+      }
+
+      #one {
+        grid-column: 1;
+        background-color: red;
+      }
+
+      #two {
+        grid-column: 2;
+        background-color: rebeccapurple;
+      }
+
+      #three {
+        grid-column: 3;
+        background-color: green;
+      }
+
+      #four {
+        grid-column: 4;
+        background-color: blue;
+      }
+
+      #five {
+        grid-column: 5;
+        background-color: darkgoldenrod;
+      }
+
+      #six {
+        grid-column: 6;
+        background-color: teal;
+      }
+
+      #seven {
+        grid-column: 7;
+        background-color: chocolate;
+      }
+
+      #eight {
+        grid-column: 8;
+        background-color: gray;
+      }
+
+      #nine {
+        grid-column: 9;
+        background-color: olive;
+      }
+
+      #ten {
+        grid-column: 10;
+        background-color: lightblue;
+      }
+
+      @media (max-width: 600px) {
+        .grid-container {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(5, 1fr);
+          grid-template-areas:
+            'one two'
+            'three four'
+            'five six'
+            'seven eight'
+            'nine ten';
+        }
+
+        #one {
+          grid-column: auto;
+        }
+
+        #two {
+          grid-column: auto;
+        }
+
+        #three {
+          grid-column: auto;
+        }
+
+        #four {
+          grid-column: auto;
+        }
+
+        #five {
+          grid-column: auto;
+        }
+
+        #six {
+          grid-column: auto;
+        }
+
+        #seven {
+          grid-column: auto;
+        }
+
+        #eight {
+          grid-column: auto;
+        }
+
+        #nine {
+          grid-column: auto;
+        }
+
+        #ten {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <h1 class="item" id="one">1</h1>
+      <h1 class="item" id="two">2</h1>
+      <h1 class="item" id="three">3</h1>
+      <h1 class="item" id="four">4</h1>
+      <h1 class="item" id="five">5</h1>
+      <h1 class="item" id="six">6</h1>
+      <h1 class="item" id="seven">7</h1>
+      <h1 class="item" id="eight">8</h1>
+      <h1 class="item" id="nine">9</h1>
+      <h1 class="item" id="ten">10</h1>
+    </div>
+  </body>
+</html>

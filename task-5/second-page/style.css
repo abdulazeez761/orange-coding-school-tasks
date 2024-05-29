@@ -1,0 +1,25 @@
+html {
+  background-color: beige;
+}
+
+.articles {
+  border: 1px solid black;
+  width: 70%;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+#article3,
+#article3 p {
+  border: 2px red dotted;
+  color: red;
+}
+
+.ipsum {
+  background-color: orange;
+}
+
+.quis {
+  background-color: yellow;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flex-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        border: 20px solid orange;
+      }
+
+      .item {
+        width: 25%;
+        height: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15em;
+        margin: 0;
+        color: white;
+      }
+      #one {
+        background-color: red;
+      }
+      #two {
+        background-color: rebeccapurple;
+      }
+      #three {
+        background-color: green;
+      }
+      #four {
+        background-color: blue;
+      }
+      #five {
+        background-color: darkgoldenrod;
+      }
+      #six {
+        background-color: teal;
+      }
+      #seven {
+        background-color: chocolate;
+      }
+      #eight {
+        background-color: gray;
+      }
+      #nine {
+        background-color: olive;
+      }
+      #ten {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <h1 class="item" id="one">1</h1>
+      <h1 class="item" id="two">2</h1>
+      <h1 class="item" id="three">3</h1>
+      <h1 class="item" id="four">4</h1>
+      <h1 class="item" id="five">5</h1>
+      <h1 class="item" id="six">6</h1>
+      <h1 class="item" id="seven">7</h1>
+      <h1 class="item" id="eight">8</h1>
+      <h1 class="item" id="nine">9</h1>
+      <h1 class="item" id="ten">10</h1>
+    </div>
+  </body>
+</html>

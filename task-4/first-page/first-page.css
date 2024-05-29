@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  background: #9a4000;
+  text-align: center;
+  padding: 70px;
+  height: 50%;
+}
+main {
+  background-color: #dfa653;
+  height: 50%;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  gap: 26px;
+  color: green;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+p {
+  margin-top: 10px;
+}
