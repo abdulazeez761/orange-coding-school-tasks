@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet" />
+    <style>
+      .btn-circle-sm {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        background-color: lightgray;
+        border-color: lightgray;
+      }
+      .btn-circle-sm:hover {
+        background-color: #754ffe;
+        border-color: #754ffe;
+      }
+      .icon-color-black {
+        color: black;
+      }
+      .btn-color-purple {
+        background-color: #754ffe;
+        border-color: #754ffe;
+        color: white;
+      }
+      .btn-color-purple:hover {
+        background-color: #ffffff;
+        color: #754ffe;
+        border-color: #754ffe;
+      }
+
+      .btn-border-color-purple {
+        border-color: #754ffe;
+      }
+      .btn-border-color-purple:hover {
+        background-color: #754ffe;
+        border-color: #754ffe;
+        color: white !important;
+      }
+      .btn-color-light-purple {
+        background-color: #ede7fb;
+        border-color: #ede7fb;
+      }
+      .btn-text-color {
+        color: #754ffe !important;
+      }
+      .container {
+        margin-top: 5%;
+      }
+      .border-color {
+        border-color: white;
+      }
+      .with-border {
+        border: 1px solid lightgrey;
+        padding: 20px;
+      }
+      .right-border {
+        border-right: none;
+      }
+      .left-border {
+        border-left: none;
+      }
+      .card-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-height: 3.6em;
+        margin-bottom: 0;
+    }
+    .btt-color{
+        background-color: white;
+        color: black;
+        border-color: white;
+    }
+    .btt-color:hover{
+        background-color: #754ffe;
+    }
+    .a-custom-style{
+        color:gray ;
+    }
+    .nav-link.active {
+            color: #754ffe !important;
+            border-bottom: 5px solid #754ffe;
+    }
+    .nav-background {
+            background-color: lightgray;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .icon-color-purple{
+
+            color: #754ffe ;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand btn-text-color" href="#">orange</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary btn-text-color btn-color-light-purple">
+        <i class="fas fa-bars"></i> gategory
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              landings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              accounts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              mega menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="btn btn-info rounded-circle btn-circle-sm m-1">
+          <i class="fas fa-sun icon-color-black"></i>
+        </button>
+        <button
+          type="button"
+          class="btn btn-info rounded-circle btn-lg btn-circle-sm m-1">
+          <i class="fas fa-shopping-cart icon-color-black"></i>
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary m-1 btn-border-color-purple btn-text-color">
+          Sign in
+        </button>
+        <button type="button" class="btn btn-primary m-1 btn-color-purple">
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <i class=""></i>
+    <i class=""></i>
+    <div class="container">
+      <div class="hero row">
+        <div class="col-md-6 hero-text">
+          <h2 class="mb-4">Grow your skills and advance career</h2>
+          <p>
+            Start, switch, or advance your career with more than 5,000 courses,
+            Professional Certificates, and degrees from world-class universities
+            and companies.
+          </p>
+          <a href="#" class="btn btn-primary m-1 btn-color-purple"
+            >Join Free Now</a
+          >
+          <a href="#" class="btn btn-outline-secondary border-color ml-2"
+            ><i class="fas fa-play"></i> Watch Demo</a
+          >
+        </div>
+        <div class="col-md-6 hero-img">
+          <img
+            src="Screenshot 2024-05-29 233903.png"
+            class="img-fluid"
+            alt="Hero Image" />
+        </div>
+      </div>
+      <div class="stats row">
+        <div class="col-md-3 stat text-center with-border left-border">
+          <i class="fa solid fa-medal fa-3x" style="color: cyan"></i>
+          <h4>316,000+</h4>
+          <p>Qualified Instructors</p>
+        </div>
+        <div class="col-md-3 stat text-center with-border">
+          <i class="fas fa-user fa-3x" style="color: orange"></i>
+          <h4>1.8 Billion+</h4>
+          <p>Course Enrollments</p>
+        </div>
+        <div class="col-md-3 stat text-center with-border">
+          <i class="fa solid fa-tv fa-3x" style="color: #754ffe"></i>
+          <h4>41,000+</h4>
+          <p>Courses in 42 Languages</p>
+        </div>
+        <div class="col-md-3 stat text-center with-border right-border">
+          <i class="fa solid fa-film fa-3x" style="color: green"></i>
+          <h4>179,000+</h4>
+          <p>Online Videos</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="top-courses-section">
+            <h2 class="my-4">Top Best Selling Courses</h2>
+            <h6 class="my-4 text-muted">These are most popular courses among Geeks coursers learns worldwide in year 2022</h4>
+        </div>
+            <ul class="nav nav-background" id="myTab" role="tablist">
+                <li class="nav-item a-custom-style">
+                    <a class="nav-link active" id="development-tab" >Development</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link a-custom-style" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design"
+                        aria-selected="false">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link a-custom-style" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab"
+                        aria-controls="marketing" aria-selected="false">Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link a-custom-style" id="business-tab" data-toggle="tab" href="#business" role="tab"
+                        aria-controls="business" aria-selected="false">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link a-custom-style" id="health-tab" data-toggle="tab" href="#health" role="tab" aria-controls="health"
+                        aria-selected="false">Health</a>
+                </li>
+            </ul>
+    
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="development-tab">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="js.png" class="card-img-top" alt="JavaScript">
+                                <div class="card-body">
+                                    <span class="badge badge-info">Intermediate</span>
+                                    <h5 class="card-title">How to easily create a website with JavaScript</h5>
+                                    <p class="card-text">By: Claire Evans</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (9,300)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"> <i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="css.png" class="card-img-top" alt="CSS">
+                                <div class="card-body">
+                                    <span class="badge badge-danger">Beginner</span>
+                                    <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                                    <p class="card-text">By: Carolyn Welborn</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="gatsby.png" class="card-img-top" alt="gatsby">
+                                <div class="card-body">
+                                    <span class="badge badge-secondary">Intermediate</span>
+                                    <h5 class="card-title">The Gatsby Course: build web</h5>
+                                    <p class="card-text">By: Floyd Amall</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="wordpress.png" class="card-img-top" alt="wordpress">
+                                <div class="card-body">
+                                    <span class="badge badge-success">Advance</span>
+                                    <h5 class="card-title">WordPress: introduction to wordpress </h5>
+                                    <p class="card-text">By: Floyd Amall</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="js.png" class="card-img-top" alt="JavaScript">
+                                <div class="card-body">
+                                    <span class="badge badge-info">Intermediate</span>
+                                    <h5 class="card-title">How to easily create a website with JavaScript</h5>
+                                    <p class="card-text">By: Claire Evans</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (9,300)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="css.png" class="card-img-top" alt="CSS">
+                                <div class="card-body">
+                                    <span class="badge badge-danger">Beginner</span>
+                                    <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                                    <p class="card-text">By: Carolyn Welborn</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="gatsby.png" class="card-img-top" alt="gatsby">
+                                <div class="card-body">
+                                    <span class="badge badge-secondary">Intermediate</span>
+                                    <h5 class="card-title">The Gatsby Course: build web</h5>
+                                    <p class="card-text">By: Floyd Amall</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <img src="wordpress.png" class="card-img-top" alt="wordpress">
+                                <div class="card-body">
+                                    <span class="badge badge-success">Advance</span>
+                                    <h5 class="card-title">WordPress: introduction to wordpress </h5>
+                                    <p class="card-text">By: Floyd Amall</p>
+                                    <p class="card-text"><small class="text-muted">Rating: 4.5 (8,890)</small></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0"><strong>$30.00</strong></p>
+                                        <a href="#" class="btn btn-primary btt-color"><i class="fas fa-shopping-cart icon-color-purple "></i> Get Enrolled</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
