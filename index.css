@@ -276,9 +276,8 @@ section#my-projects h2,
 .why-me-text {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between;
+  align-content: space-around;
   height: 305px;
   width: 500px;
 }

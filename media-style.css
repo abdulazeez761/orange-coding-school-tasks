@@ -215,6 +215,10 @@
     align-content: center;
     justify-content: flex-start;
   }
+
+  .why-me-opitions {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 1030px) {
   .header-about-me img {
@@ -242,14 +246,6 @@
     left: 5%;
     top: 20px;
   }
-}
-@media (width > 768px) {
-  #nav a {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -263,6 +259,11 @@
 
   .footer-info p {
     text-align: start;
+  }
+}
+@media (width > 768px) {
+  #nav a {
+    display: block;
   }
 }
 
