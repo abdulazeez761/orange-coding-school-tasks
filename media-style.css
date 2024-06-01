@@ -190,11 +190,11 @@
     height: 195px;
   }
   .why-me-text {
-    height: 70%;
+    height: 50%;
   }
   .why-me-text p {
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 600;
     color: #726c6c;
     line-height: 1.4;
   }
