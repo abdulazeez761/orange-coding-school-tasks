@@ -37,7 +37,6 @@ header {
   gap: 2em;
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: row;
   justify-content: center;
 }
@@ -49,9 +48,8 @@ header {
   font-weight: bold;
 }
 #nav img {
-  width: 100px;
-  height: 100px;
-  /* padding: 10px; */
+  width: 10%;
+  height: auto;
 }
 #nav .fa-solid {
   display: none;
