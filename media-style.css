@@ -242,7 +242,6 @@
     justify-content: center;
     align-items: center;
     z-index: 50;
-
     background-color: transparent;
   }
   #nav img {
@@ -261,9 +260,13 @@
     left: 5%;
     top: 30px;
   }
+  .header-about-me img {
+    width: 43%;
+    height: 100%;
+  }
   #nav img {
     position: absolute;
-    right: 5%;
+    right: 0%;
     top: 0px;
   }
   .footer-container {
@@ -295,11 +298,11 @@
   }
   .education-item:nth-child(odd) .content {
     position: relative;
-    right: 20%;
+    right: 13%;
   }
   .education-item:nth-child(even) .content {
     position: relative;
-    right: 20%;
+    right: 13%;
   }
   .timeline {
     display: flex;
