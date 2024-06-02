@@ -247,7 +247,6 @@
   #nav img {
     width: 15%;
     height: 100px;
-    /* padding: 10px; */
   }
   #nav a {
     display: none;
@@ -294,7 +293,6 @@
   #nav img {
     width: 30%;
     height: 90px;
-    /* padding: 10px; */
   }
   .education-item:nth-child(odd) .content {
     position: relative;

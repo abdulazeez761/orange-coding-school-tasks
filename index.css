@@ -122,24 +122,20 @@ header {
   transition: all 0.1s ease-in;
 }
 .header-icons a:hover {
-  /* color: unset; */
   color: #f36868;
 }
 
 .header-about-me img {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
   position: relative;
   width: 23%;
   height: 100%;
 
-  object-fit: cover; /* Ensure the image covers the container */
+  object-fit: cover;
   background-image: url('./images/my-background.svg');
-  /* background-position: center 0px center 0px; */
   background-repeat: no-repeat;
   background-size: 116% 126%;
-  border-radius: 18px; /* Circular shape */
+  border-radius: 18px;
 }
 .header-about-me p {
   max-width: 70%;
@@ -318,8 +314,6 @@ section#my-projects h2,
 }
 .why-me-opitions {
   display: flex;
-  /* height: 53%; */
-  /* gap: 20px; */
   width: 500px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -392,7 +386,7 @@ section#my-projects h2,
 }
 
 .item:hover {
-  transform: scale(1.02); /* Slightly enlarge the card on hover */
+  transform: scale(1.02);
 }
 .text {
   width: 80%;
