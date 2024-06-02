@@ -18,14 +18,17 @@
   <body>
     <header id="header">
       <nav id="nav">
-        <i id="burger-icon" class="fa-solid fa-bars"></i>
-        <a href="#header" class="navigator">Home</a>
-        <a href="#education" class="navigator">Education </a>
-        <a href="#why-me-container" class="navigator">Why me</a>
-        <a href="#experience" class="navigator">Experience</a>
-        <a href="#my-projects" class="navigator">Projects</a>
-        <a href="#skills" class="navigator">Skills</a>
-        <a href="#contact" class="navigator">Contact Us</a>
+        <img src="./images/logo.png" />
+        <div id="navigatores">
+          <i id="burger-icon" class="fa-solid fa-bars"></i>
+          <a href="#header" class="navigator">Home</a>
+          <a href="#education" class="navigator">Education </a>
+          <a href="#why-me-container" class="navigator">Why me</a>
+          <a href="#experience" class="navigator">Experience</a>
+          <a href="#my-projects" class="navigator">Projects</a>
+          <a href="#skills" class="navigator">Skills</a>
+          <a href="#contact" class="navigator">Contact Us</a>
+        </div>
       </nav>
 
       <div class="header-about-me">
@@ -363,7 +366,7 @@
     <script>
       const navLinks = document.querySelectorAll('.navigator');
       const toggleIcon = document.getElementById('burger-icon');
-
+      const nav = document.getElementById('nav');
       //for the toggel
       function handeltoggelNav(event) {
         const windowWidth = window.innerWidth;
@@ -371,12 +374,21 @@
         navLinks.forEach((link) => {
           if (windowWidth > 768) {
             link.style.display = 'block';
+            navigatorContainer.style.width = '0vh';
           } else {
             if (link.style.display === '') link.style.display = 'none';
             const displayState = link.style.display == 'block';
-            displayState
-              ? (link.style.display = 'none')
-              : (link.style.display = 'block');
+
+            if (displayState) {
+              link.style.display = 'none';
+              nav.style.height = '15vh';
+            } else {
+              link.style.display = 'block';
+              nav.style.height = '100vh';
+            }
+            // displayState
+            //   ? (link.style.display = 'none')
+            //   : (link.style.display = 'block');
           }
         });
       }
@@ -390,6 +402,7 @@
             link.style.display = 'block';
           } else {
             link.style.display = 'none';
+            nav.style.height = '15vh';
           }
         });
       }
