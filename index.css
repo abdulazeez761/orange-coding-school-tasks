@@ -136,9 +136,9 @@ header {
 
   object-fit: cover; /* Ensure the image covers the container */
   background-image: url('./images/my-background.svg');
-  background-position: center 0px center 0px;
+  /* background-position: center 0px center 0px; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 116% 126%;
   border-radius: 18px; /* Circular shape */
 }
 .header-about-me p {
