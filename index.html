@@ -378,8 +378,8 @@
         const windowWidth = window.innerWidth;
         if (windowWidth > 768) {
           link.style.display = 'block';
-          nav.style.height = '15vh';
-        } else if (windowWidth < 425) nav.style.height = '11vh';
+          nav.style.height = '10%';
+        } else if (windowWidth < 425) nav.style.height = '10%';
 
         navLinks.forEach((link) => {
           if (link.style.display === '') link.style.display = 'none';
@@ -388,8 +388,8 @@
           if (displayState) {
             link.style.display = 'none';
             windowWidth <= 425
-              ? (nav.style.height = '11vh')
-              : (nav.style.height = '15vh');
+              ? (nav.style.height = '10%')
+              : (nav.style.height = '10%');
           } else {
             link.style.display = 'block';
             nav.style.height = '100vh';
@@ -406,7 +406,7 @@
             link.style.display = 'block';
           } else {
             link.style.display = 'none';
-            nav.style.height = '15vh';
+            nav.style.height = '10%';
           }
         });
       }

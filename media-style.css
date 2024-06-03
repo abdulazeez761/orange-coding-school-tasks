@@ -233,7 +233,7 @@
     justify-content: center;
     align-items: center;
     z-index: 50;
-    height: 15vh;
+    /* height: 15vh; */
     background-color: #f1f5f6;
   }
   #navigatores {
@@ -292,7 +292,7 @@
 
 @media (width <=500px) {
   #nav {
-    height: 11vh;
+    /* height: 11vh; */
   }
   #nav img {
     width: 20%;
