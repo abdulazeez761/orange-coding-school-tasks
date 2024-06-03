@@ -292,7 +292,7 @@
 
 @media (width <=500px) {
   #nav {
-    /* height: 11vh; */
+    height: 10%;
   }
   #nav img {
     width: 20%;
