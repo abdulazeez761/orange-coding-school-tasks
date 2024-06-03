@@ -291,6 +291,9 @@
 }
 
 @media (width <=500px) {
+  #nav {
+    height: 10vh;
+  }
   #nav img {
     width: 20%;
     height: 77px;
