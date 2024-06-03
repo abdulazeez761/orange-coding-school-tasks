@@ -376,22 +376,23 @@
       //for the toggel
       function handeltoggelNav(event) {
         const windowWidth = window.innerWidth;
+        if (windowWidth > 768) {
+          link.style.display = 'block';
+          nav.style.height = '15vh';
+        } else if (windowWidth < 425) nav.style.height = '11vh';
 
         navLinks.forEach((link) => {
-          if (windowWidth > 768) {
-            link.style.display = 'block';
-            navigatorContainer.style.width = '15vh';
-          } else {
-            if (link.style.display === '') link.style.display = 'none';
-            const displayState = link.style.display == 'block';
+          if (link.style.display === '') link.style.display = 'none';
+          const displayState = link.style.display == 'block';
 
-            if (displayState) {
-              link.style.display = 'none';
-              nav.style.height = '15vh';
-            } else {
-              link.style.display = 'block';
-              nav.style.height = '100vh';
-            }
+          if (displayState) {
+            link.style.display = 'none';
+            windowWidth <= 425
+              ? (nav.style.height = '11vh')
+              : (nav.style.height = '15vh');
+          } else {
+            link.style.display = 'block';
+            nav.style.height = '100vh';
           }
         });
       }
