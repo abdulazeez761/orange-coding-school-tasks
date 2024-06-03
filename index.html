@@ -18,7 +18,7 @@
   <body>
     <header id="header">
       <nav id="nav">
-        <img src="./images/logo.png" />
+        <img src="./images/logo2-nobk-preview.png" />
         <div id="navigatores">
           <i id="burger-icon" class="fa-solid fa-bars"></i>
           <a href="#header" class="navigator">Home</a>
@@ -27,7 +27,7 @@
           <a href="#experience" class="navigator">Experience</a>
           <a href="#my-projects" class="navigator">Projects</a>
           <a href="#skills" class="navigator">Skills</a>
-          <a href="#contact" class="navigator">Contact Us</a>
+          <a href="#contact" class="navigator">Contact Me</a>
         </div>
       </nav>
 
@@ -85,10 +85,13 @@
           <h1>Why Me?</h1>
           <h2>I HELP YOU TO MAKE BEAUTIFUL WEBSITES</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis et,
-            elementum, eu quis morbi arcu lectus. Vivamus est nibh id curabitur
-            urna cursus amet. Sagittis tempor enim at montes, quis id pretium.
-            Ac fermentum enim euismod non.
+            Dedicated full-stack web developer with a strong foundation in
+            self-learning and a current pursuit of a computer science degree. I
+            am passionate about crafting exceptional web solutions through
+            technical expertise and innovative problem-solving. Seeking a
+            dynamic role within a forward-thinking team to contribute my skills,
+            drive innovation, and lead impactful web development projects to
+            success.
           </p>
         </div>
         <div class="why-me-opitions">
@@ -324,7 +327,9 @@
         <span class="circle" aria-hidden="true">
           <span class="icon arrow"></span>
         </span>
-        <a class="button-text" href="resume-24-nestjs.pdf">My Resume</a>
+        <a class="button-text" target="_blank" href="resume-24-nestjs.pdf"
+          >My Resume</a
+        >
       </button>
     </main>
     <footer id="contact">
@@ -375,7 +380,7 @@
         navLinks.forEach((link) => {
           if (windowWidth > 768) {
             link.style.display = 'block';
-            navigatorContainer.style.width = '0vh';
+            navigatorContainer.style.width = '15vh';
           } else {
             if (link.style.display === '') link.style.display = 'none';
             const displayState = link.style.display == 'block';
@@ -400,7 +405,7 @@
             link.style.display = 'block';
           } else {
             link.style.display = 'none';
-            nav.style.height = '17vh';
+            nav.style.height = '15vh';
           }
         });
       }

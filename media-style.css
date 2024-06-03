@@ -245,8 +245,9 @@
     background-color: transparent;
   }
   #nav img {
-    width: 15%;
-    height: 100px;
+    width: 13%;
+
+    height: 80px;
   }
   #nav a {
     display: none;
@@ -291,8 +292,8 @@
 
 @media (width <=500px) {
   #nav img {
-    width: 30%;
-    height: 90px;
+    width: 20%;
+    height: 77px;
   }
   .education-item:nth-child(odd) .content {
     position: relative;
