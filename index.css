@@ -357,14 +357,14 @@ section#my-projects h2,
 .options p {
   font-weight: 100;
   text-align: left;
-    color: #4f4d4d;
+  color: #726c6c;
   transition: all 0.35s ease-in-out;
 }
 .options:hover {
   cursor: pointer;
 }
 .options:hover > p {
-  color: #e64444;
+  color: #e52b2b;
 }
 /* !prjects */
 
