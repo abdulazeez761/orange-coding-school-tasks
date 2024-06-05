@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p id="res"></p>
+    <script>
+      const pass = 'abc123';
+      const userName = 'Abdulaziz';
+      const name = prompt('Enter your username:');
+      const password = prompt('Enter your password:');
+      let res;
+      if (pass == password && userName == name) {
+        res = 'login successful';
+      } else {
+        res = 'incorrect password';
+      }
+      document.getElementById('res').innerText = `Result: ${res}`;
+    </script>
+  </body>
+</html>
