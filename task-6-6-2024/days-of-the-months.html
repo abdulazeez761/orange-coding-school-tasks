@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day of the months</title>
+  </head>
+  <body>
+    <h1>Day of the months</h1>
+    <script>
+      const daysOfmonths = {
+        1: 31, // January
+        2: 28, // February
+        3: 31, // March
+        4: 30, // April
+        5: 31, // May
+        6: 30, // June
+        7: 31, // July
+        8: 31, // August
+        9: 30, // September
+        10: 31, // October
+        11: 30, // November
+        12: 31, // December
+      };
+
+      const userInput = +prompt('Enter a number from 1 to 12:');
+
+      alert(`Day of the month: ${daysOfmonths[userInput] || 'Invalid input'}`);
+    </script>
+  </body>
+</html>

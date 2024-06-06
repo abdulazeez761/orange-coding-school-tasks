@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Evaluation System</title>
+  </head>
+  <body>
+    <h1>Grade Evaluation System</h1>
+    <script>
+      const grade1 = prompt('Enter grade for subject 1:');
+      const grade2 = prompt('Enter grade for subject 2:');
+      const grade3 = prompt('Enter grade for subject 3:');
+
+      const averageGrade = (grade1 + grade2 + grade3) / 3;
+
+      let result;
+      if (averageGrade >= 60) {
+        result = 'Pass';
+      } else {
+        result = 'Fail';
+      }
+
+      alert(`Average Grade: ${averageGrade}\nResult: ${result}`);
+    </script>
+  </body>
+</html>

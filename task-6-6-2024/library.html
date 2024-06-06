@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Book Loan System</title>
+  </head>
+  <body>
+    <h1>Library Book Loan System</h1>
+    <script>
+      const userType = prompt('Enter your user type (student or teacher):');
+      const numBooksRequested = prompt(
+        'Enter the number of books you want to borrow:'
+      );
+      +numBooksRequested;
+
+      let maxBooksAllowed;
+      if (userType.toLowerCase() === 'student') maxBooksAllowed = 3;
+      else if (userType.toLowerCase() === 'teacher') maxBooksAllowed = 5;
+      else alert('Invalid user type entered!');
+
+      let message;
+      if (numBooksRequested <= maxBooksAllowed) {
+        message = `Loan approved! You can borrow ${numBooksRequested} books.`;
+      } else {
+        message = `Loan denied! You can only borrow up to ${maxBooksAllowed} books.`;
+      }
+
+      alert(message);
+    </script>
+  </body>
+</html>

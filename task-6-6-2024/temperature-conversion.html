@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+  </head>
+  <body>
+    <h1>Temperature Conversion</h1>
+    <p id="result"></p>
+    <script>
+      const celsius = prompt('Enter the temperature in Celsius:');
+      const fahrenheit = (celsius * 9) / 5 + 32;
+
+      let result;
+      if (celsius < 0) {
+        result = `The temperature is ${fahrenheit} F,  It is below freezing.`;
+      } else if (celsius > 100) {
+        result = `The temperature is ${fahrenheit} F,  It is above boiling.`;
+      } else {
+        result = `The temperature is ${fahrenheit} F,  It is normal.`;
+      }
+
+      document.getElementById('result').innerText = result;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Score and Grade</title>
+  </head>
+  <body>
+    <h1>Exam Score and Grade Calculator</h1>
+    <button onclick="calculateGrade()">Calculate Grade</button>
+
+    <script>
+      function calculateGrade() {
+        let score = prompt('Enter your exam score:');
+        score = +score;
+        if (score > 70) {
+          let bonusCompleted = confirm(
+            'Did you complete any bonus assignments?'
+          );
+          if (bonusCompleted) {
+            score += 5;
+          }
+        }
+
+        let grade;
+        if (score >= 90) {
+          grade = 'A';
+        } else if (score >= 80) {
+          grade = 'B';
+        } else if (score >= 70) {
+          grade = 'C';
+        } else if (score >= 60) {
+          grade = 'D';
+        } else {
+          grade = 'F';
+        }
+
+        alert(
+          'Your final score is ' + score + '. Your grade is ' + grade + '.'
+        );
+      }
+    </script>
+  </body>
+</html>

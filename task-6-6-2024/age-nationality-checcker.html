@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age And Nationality Checker</title>
+  </head>
+  <body>
+    <h1>Age And Nationality Checker</h1>
+    <button onclick="checkAgeAndNationality()">
+      Check Age And Nationality
+    </button>
+
+    <script>
+      function checkAgeAndNationality() {
+        let approvedAge, approvedNationality;
+        let age = prompt('Enter Your Age:');
+        if (age >= 18) approvedAge = true;
+
+        let nationality = prompt('Enter Your nationality:');
+        if (nationality.toLocaleLowerCase() == 'American') approvedNationality;
+
+        if (approvedAge && approvedNationality) alert('can vote');
+        else alert('can not vote!');
+      }
+    </script>
+  </body>
+</html>

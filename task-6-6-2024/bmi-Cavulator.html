@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <button onclick="calculateAndDisplayBMI()">Calculate BMI</button>
+
+    <script>
+      function calculateBMI(weight, height) {
+        let bmi = weight / (height * height);
+        return bmi;
+      }
+
+      function getBMICategory(bmi) {
+        if (bmi < 18.5) {
+          return 'Underweight';
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+          return 'Normal weight';
+        } else if (bmi >= 25 && bmi < 29.9) {
+          return 'Overweight';
+        } else {
+          return 'Obesity';
+        }
+      }
+
+      function calculateAndDisplayBMI() {
+        let weight = prompt('Enter your weight in kilograms:');
+        let height = prompt('Enter your height in meters:');
+        let bmi = calculateBMI(weight, height);
+        let category = getBMICategory(bmi);
+        alert(
+          'Your BMI is ' +
+            bmi.toFixed(2) +
+            '. You are classified as: ' +
+            category
+        );
+      }
+    </script>
+  </body>
+</html>

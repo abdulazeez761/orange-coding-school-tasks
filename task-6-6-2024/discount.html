@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <h1>Discount Calculator</h1>
+    <p id="result"></p>
+    <script>
+      let totalAmountOfCart = prompt('Enter Total Amount of Cart:');
+      totalAmountOfCart = +totalAmountOfCart;
+
+      let result;
+      if (totalAmountOfCart > 100 && totalAmountOfCart <= 200) {
+        let discountPrecentage = 10 / 100;
+        result = `You got a 10% discount. Amount after discount is: $${
+          totalAmountOfCart - discountPrecentage * totalAmountOfCart
+        }.`;
+      } else if (totalAmountOfCart > 200) {
+        let discountPrecentage = 20 / 100;
+        result = `You got a 20% discount. Amount after discount is: $${
+          totalAmountOfCart - discountPrecentage * totalAmountOfCart
+        }.`;
+      } else {
+        result =
+          'No discount applied. Total amount is: $' +
+          totalAmountOfCart.toFixed(2);
+      }
+
+      document.getElementById('result').innerText = result;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Order System</title>
+  </head>
+  <body>
+    <h1>Restaurant Order System</h1>
+    <script>
+      const order = prompt(
+        'Enter your order (Pizza, Pasta, or Salad):'
+      ).toLowerCase();
+      const quantity = prompt('Enter the quantity:');
+
+      let itemPrice;
+
+      switch (order) {
+        case 'pizza':
+          itemPrice = 10;
+          break;
+        case 'pasta':
+          itemPrice = 8;
+          break;
+        case 'salad':
+          itemPrice = 6;
+          break;
+        default:
+          alert('Invalid order entered!');
+          throw new Error('Invalid order entered!');
+      }
+
+      let totalPrice = itemPrice * quantity;
+
+      if (quantity > 1) {
+        totalPrice *= 0.9;
+      }
+
+      alert(`Your total price is $${totalPrice.toFixed(2)}.`);
+    </script>
+  </body>
+</html>

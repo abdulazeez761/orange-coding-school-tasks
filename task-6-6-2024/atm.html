@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Withdrawal Simulation</title>
+  </head>
+  <body>
+    <h1>ATM Withdrawal Simulation</h1>
+    <p id="result"></p>
+    <script>
+      const currentBalance = prompt('Enter your current balance:');
+      const withdrawalAmount = prompt('Enter the withdrawal amount:');
+
+      let result;
+      if (withdrawalAmount > 0 && withdrawalAmount >= currentBalance)
+        result = `Transaction successful! Your new balance is $${
+          currentBalance - withdrawalAmount
+        }.`;
+      else result = 'Error: Insufficient funds or invalid withdrawal amount.';
+
+      document.getElementById('result').innerText = result;
+    </script>
+  </body>
+</html>

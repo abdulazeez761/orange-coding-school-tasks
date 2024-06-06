@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Room Booking</title>
+  </head>
+  <body>
+    <h1>Hotel Room Booking</h1>
+    <script>
+      const roomType = prompt(
+        'Enter the type of room you want to book (Single, Double, or Suite):'
+      ).toLowerCase();
+      const numNights = prompt('Enter the number of nights you want to stay:');
+
+      let roomPrice;
+
+      if (roomType === 'single') {
+        roomPrice = 50;
+      } else if (roomType === 'double') {
+        roomPrice = 80;
+      } else if (roomType === 'suite') {
+        roomPrice = 120;
+      } else {
+        alert('Invalid room type entered!');
+        throw new Error('Invalid room type entered!');
+      }
+
+      const totalCost = roomPrice * parseInt(numNights);
+
+      alert(
+        `Total cost for ${roomType} room for ${numNights} nights: $${totalCost}`
+      );
+    </script>
+  </body>
+</html>

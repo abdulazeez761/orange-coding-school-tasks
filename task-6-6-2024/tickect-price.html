@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ticket Pricing</title>
+  </head>
+  <body>
+    <h1>Movie Ticket Pricing</h1>
+    <script>
+      const age = prompt('Enter your age:');
+      const movieType = prompt(
+        'Enter the type of movie (Regular or 3D):'
+      ).toLowerCase();
+
+      let ticketPrice;
+
+      if (age < 12) {
+        ticketPrice = 8;
+      } else {
+        ticketPrice = 10;
+      }
+
+      if (movieType === '3d') {
+        ticketPrice += 3;
+      }
+
+      alert(`Your ticket price is $${ticketPrice}.`);
+    </script>
+  </body>
+</html>
