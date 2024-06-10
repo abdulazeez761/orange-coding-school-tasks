@@ -15,7 +15,6 @@
         while (number) {
           if (!containedNumbers.includes(Math.floor(number % 10)))
             containedNumbers[i] = Math.floor(number % 10);
-
           number = Math.floor(number / 10);
           i++;
         }
