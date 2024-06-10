@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grading system</title>
+  </head>
+  <body>
+    <h1>grading system</h1>
+
+    <script>
+      function grading(grade) {
+        if (grade <= 100 && grade >= 95) return 'A';
+        if (grade <= 95 && grade >= 85) return 'B';
+        if (grade <= 84 && grade >= 70) return 'C';
+        if (grade <= 69 && grade >= 50) return 'D';
+        if (grade <= 49 && grade >= 0) return 'F';
+      }
+
+      console.log(grading(0));
+    </script>
+  </body>
+</html>

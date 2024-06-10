@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorter String</title>
+  </head>
+  <body>
+    <h1>Shorter String Function</h1>
+
+    <script>
+      function shorterString(s1, s2, s3, s4, s5) {
+        let shortest = s1;
+
+        if (s2.length < shortest.length) {
+          shortest = s2;
+        }
+
+        if (s3.length < shortest.length) {
+          shortest = s3;
+        }
+
+        if (s4.length < shortest.length) {
+          shortest = s4;
+        }
+
+        if (s5.length < shortest.length) {
+          shortest = s5;
+        }
+
+        return shortest;
+      }
+
+      console.log(shorterString('air', 'school', 'car', 'by', 'github'));
+      console.log(shorterString('air', 'tr', 'car', 'by', 'github'));
+      console.log(shorterString('by', 'tr', 'car', 'air', 'github'));
+      console.log(shorterString('air', 'by', 'car', 'school', 'github'));
+      console.log(shorterString('air', 'tr', 'by', 'car', 'github'));
+      console.log(shorterString('air', 'tr', 'car', 'github', 'by'));
+    </script>
+  </body>
+</html>

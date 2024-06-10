@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pandigital</title>
+  </head>
+  <body>
+    <h1>pandigital</h1>
+
+    <script>
+      function isPandigital(number) {
+        let containedNumbers = [];
+        let i = 0;
+        while (number) {
+          containedNumbers[i] = Math.floor(number % 10);
+          number = Math.floor(number / 10);
+          i++;
+        }
+        for (let i = 0; i < 9; i++) {
+          if (!containedNumbers.includes(i)) return `${i} does not exist!`;
+        }
+        return true;
+      }
+
+      console.log(isPandigital(90864523148909));
+    </script>
+  </body>
+</html>

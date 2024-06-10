@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>avarage</title>
+  </head>
+  <body>
+    <h1>avarage</h1>
+
+    <script>
+      function avarage(x) {
+        let sum = 0;
+        for (let i = 0; i < x.length; i++) {
+          sum += x[i];
+        }
+        return sum / x.length;
+      }
+
+      console.log(avarage([1, 2, 3, 4, 5]));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driving License Eligibility</title>
+  </head>
+  <body>
+    <h1>Driving License Eligibility</h1>
+
+    <script>
+      function canIGetADrivingLicense(age) {
+        const requiredAge = 20;
+        if (age >= requiredAge) {
+          return 'yes you can';
+        } else {
+          const yearsToWait = requiredAge - age;
+          return `please come back after ${yearsToWait} years to get one`;
+        }
+      }
+
+      console.log(canIGetADrivingLicense(21));
+      console.log(canIGetADrivingLicense(17));
+      console.log(canIGetADrivingLicense(20));
+    </script>
+  </body>
+</html>

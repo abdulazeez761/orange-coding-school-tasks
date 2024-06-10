@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reverseCounter</title>
+  </head>
+  <body>
+    <h1>reverseCounter</h1>
+
+    <script>
+      // function reverseCounter(startingPoint, timesToRepeat) {
+      //   console.log(startingPoint);
+      //   if (startingPoint > timesToRepeat)
+      //     return reverseCounter(startingPoint - 1, timesToRepeat);
+      // }
+
+      // reverseCounter(10, 0);
+
+      let count = 0;
+
+      function counter() {
+        return ++count;
+      }
+
+      function resetCounter() {
+        const previousCount = count;
+        count = 0;
+        return `${previousCount} and the counter reset now`;
+      }
+
+      console.log(counter());
+      console.log(counter());
+      console.log(counter());
+      console.log(resetCounter());
+      console.log(counter());
+      console.log(counter());
+      console.log(resetCounter());
+      console.log(counter());
+    </script>
+  </body>
+</html>

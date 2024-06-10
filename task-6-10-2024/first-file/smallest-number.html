@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smaller Number</title>
+  </head>
+  <body>
+    <h1>Smaller Number Function</h1>
+
+    <script>
+      function smallerNumber(a, b, c) {
+        let smallest = a;
+
+        if (b < smallest) {
+          smallest = b;
+        }
+
+        if (c < smallest) {
+          smallest = c;
+        }
+
+        return smallest;
+      }
+
+      console.log(smallerNumber(8, 6, 7));
+      console.log(smallerNumber(5, 99, 34));
+      console.log(smallerNumber(5, 99, 3));
+      console.log(smallerNumber(5, 3, 3));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <h1>Fortune Teller</h1>
+
+    <script>
+      function tellFortune(numChildren, partnerName, geoLocation, jobTitle) {
+        let fortune =
+          'You will be a ' +
+          jobTitle +
+          ' in ' +
+          geoLocation +
+          ', and married to ' +
+          partnerName +
+          ' with ' +
+          numChildren +
+          ' kids.';
+        console.log(fortune);
+      }
+
+      tellFortune(9, '....', 'New York', 'CEO');
+    </script>
+  </body>
+</html>

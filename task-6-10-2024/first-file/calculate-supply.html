@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Calculator</title>
+  </head>
+  <body>
+    <h1>Supply Calculator</h1>
+
+    <script>
+      function calculateSupply(age, amountPerDay) {
+        const maxAge = 100;
+        const daysRemaining = (maxAge - age) * 365;
+        const totalAmount = daysRemaining * amountPerDay;
+        console.log(
+          `You will need ${totalAmount} cups of tea to last you until the ripe old age of ${maxAge}`
+        );
+      }
+
+      calculateSupply(30, 3);
+    </script>
+  </body>
+</html>

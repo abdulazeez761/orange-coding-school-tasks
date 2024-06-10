@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random between Number Generator</title>
+  </head>
+  <body>
+    <h1>Random between Number Generator Function</h1>
+
+    <script>
+      function randomBetween(from, to) {
+        return Math.random() * (to - from) * +from;
+      }
+
+      console.log(randomBetween());
+      console.log(randomBetween());
+      console.log(randomBetween());
+    </script>
+  </body>
+</html>
