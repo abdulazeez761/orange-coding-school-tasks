@@ -13,10 +13,13 @@
         let containedNumbers = [];
         let i = 0;
         while (number) {
-          containedNumbers[i] = Math.floor(number % 10);
+          if (!containedNumbers.includes(Math.floor(number % 10)))
+            containedNumbers[i] = Math.floor(number % 10);
+
           number = Math.floor(number / 10);
           i++;
         }
+        console.log(containedNumbers);
         for (let i = 0; i < 9; i++) {
           if (!containedNumbers.includes(i)) return `${i} does not exist!`;
         }
