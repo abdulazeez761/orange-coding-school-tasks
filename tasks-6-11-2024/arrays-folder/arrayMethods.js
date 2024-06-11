@@ -1,0 +1,10 @@
+var array = [0, 5, 7, 9];
+array.shift();
+array.unshift(1);
+array.splice(1, 0, 3);
+array.splice(2, 0, 4);
+array.splice(4, 0, 6);
+array.splice(6, 0, 8);
+array.pop();
+array.push(9, 10);
+console.log(array);
