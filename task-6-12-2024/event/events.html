@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Examples</title>
+    <style>
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="onmouseenter" onmouseenter="onmouseenter1()">Hover me</p>
+
+    <select id="countrySelect" onchange="displayFlag()">
+      <option value="none">Select a country</option>
+      <option value="Norway">Norway</option>
+      <option value="Jordan">Jordan</option>
+    </select>
+
+    <br /><br />
+    <img id="flagImage" src="" alt="Country Flag" />
+
+    <form>
+      <label for="password">Password (min 6 characters):</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        oninput="validatePassword()" />
+      <span id="passwordError" class="error hidden">Too short</span>
+      <br /><br />
+      <label for="confirmPassword">Repeat password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        oninput="validatePassword()" />
+      <span id="confirmError" class="error hidden">Passwords do not match</span>
+    </form>
+    <div>
+      <h1>what is lorem</h1>
+      <p id="first-lorem-p">
+        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+      </p>
+      <button
+        id="hide-show"
+        onclick="hideLorem('first-lorem-p' , 'hide-show' )">
+        remove
+      </button>
+    </div>
+
+    <div class="toolbar">
+      <select id="fontSelect" onchange="formatText()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+      </select>
+      <select id="fontSizeSelect" onchange="formatText()">
+        <option value="12px">12pt</option>
+        <option value="14px">14pt</option>
+        <option value="16px">16pt</option>
+        <option value="18px">18pt</option>
+        <option value="20px">20pt</option>
+      </select>
+      <input type="checkbox" id="boldCheck" onclick="formatText()" /> Bold
+      <input type="checkbox" id="italicCheck" onclick="formatText()" /> Italic
+      <input type="checkbox" id="underlineCheck" onclick="formatText()" />
+      Underline
+    </div>
+    <div
+      contenteditable="true"
+      id="textArea"
+      style="border: 1px solid #000"></div>
+    <script src="./events.js"></script>
+  </body>
+</html>

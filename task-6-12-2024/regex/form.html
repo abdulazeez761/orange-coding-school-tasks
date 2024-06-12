@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration and Login</title>
+    <style>
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+      .hidden {
+        display: none;
+      }
+      .form-container {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <div class="form-container" id="registrationForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required />
+      <span id="firstNameError" class="error hidden"
+        >Only letters are allowed</span
+      >
+      <br /><br />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required />
+      <span id="lastNameError" class="error hidden"
+        >Only letters are allowed</span
+      >
+      <br /><br />
+
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" id="birthDate" required />
+      <span id="birthDateError" class="error hidden">Invalid birth date</span>
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <span id="emailError" class="error hidden">Invalid email format</span>
+      <br /><br />
+
+      <label for="confirmEmail">Confirm Email:</label>
+      <input type="email" id="confirmEmail" required />
+      <span id="confirmEmailError" class="error hidden"
+        >Emails do not match</span
+      >
+      <br /><br />
+
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" required />
+      <span id="passwordError" class="error hidden"
+        >Invalid password format</span
+      >
+      <br /><br />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+      <span id="confirmPasswordError" class="error hidden"
+        >Passwords do not match</span
+      >
+      <br /><br />
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" required />
+      <span id="mobileNumberError" class="error hidden"
+        >Invalid mobile number</span
+      >
+      <br /><br />
+
+      <button onclick="registerUser()">Register</button>
+    </div>
+
+    <h2>Login Form</h2>
+    <div class="form-container" id="loginForm">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" required />
+      <br /><br />
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" required />
+      <br /><br />
+
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
