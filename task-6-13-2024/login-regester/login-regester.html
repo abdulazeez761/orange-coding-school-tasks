@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration and Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .form-container {
+        margin-bottom: 20px;
+      }
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container form input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .form-container form input[type='submit'] {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .form-container form input[type='submit']:hover {
+        background-color: #218838;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      .card p {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container" id="registrationFormContainer">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Password"
+            required />
+          <input
+            onclick="storeRegistrationData(event)"
+            type="submit"
+            value="Register" />
+        </form>
+      </div>
+
+      <div class="form-container" id="loginFormContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required />
+          <input
+            onclick="authenticateUser(event)"
+            type="submit"
+            value="Login" />
+        </form>
+      </div>
+
+      <div id="cardContainer"></div>
+    </div>
+
+    <script src="./login-regester.js"></script>
+  </body>
+</html>
