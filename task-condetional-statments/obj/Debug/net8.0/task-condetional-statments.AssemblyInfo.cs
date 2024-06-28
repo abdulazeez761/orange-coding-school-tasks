@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("task-condetional-statments")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c625d3c4601f606147852fa42e5f6feb99e0fc0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+864f1d688c2714231c25f3498cb06860e109fc8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("task-condetional-statments")]
 [assembly: System.Reflection.AssemblyTitleAttribute("task-condetional-statments")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
