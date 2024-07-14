@@ -1,4 +1,0 @@
-Name: Abdulaziz Faisal Al Hariri
-Specialization: Full-Stack Web Developer
-Age: 21
-Description: Self-taught programmer with experience in full-stack web development. Skilled in HTML, CSS, JavaScript, React.js, Node.js, Express, Nestjs, Git, GitHub, API development, JWT, Redux.js, Redux Toolkit, TailwindCSS, Discord.js, webhooks, NoSQL (MongoDB), SQL (MySQL, SQLite), Redis, TypeScript, C++, and Python.
