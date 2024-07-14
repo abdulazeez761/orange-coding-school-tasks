@@ -1,0 +1,42 @@
+﻿@model List<Teacher>
+<div class="container">
+    <form action="Create" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="CourseName" class="form-control" placeholder="Enter your name.." />
+            </div>
+  
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="active">Capacity</label>
+                <div class="form-check">
+                    <input type="text" id="capacity" name="IsActive" class="form-check-input"  />
+                    <label class="text" for="capacity">Capacity</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+               <label for="Teacher">Select Teacher</label>
+            </div>
+            <div class="col-75">
+                <select id="Teacher" name="TeacherId">
+                    @foreach(Teacher teacer in Model)
+                    {
+                        <option value="@teacer.TeacherId"> @teacer.TeacherName </option>
+                    }
+                </select>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>

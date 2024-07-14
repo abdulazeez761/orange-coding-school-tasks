@@ -1,0 +1,50 @@
+﻿@model List<Course>
+<a class="nav-link text-dark" asp-area="" asp-controller="CourseController1" asp-action="Create">Add Course</a>
+<br />
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Capacity</th>
+        <th>Name</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (Course course in Model)
+    {
+        <tr>
+            <td>@course.Capacity</td>
+            <td>@course.CourseName</td> 
+            <td> <a href="/CourseController1/Delete/@course.CourseId"> Delete @course.CourseName</a></td>
+        </tr>
+    }
+</table>

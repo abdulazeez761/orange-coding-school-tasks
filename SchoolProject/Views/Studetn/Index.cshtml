@@ -1,0 +1,57 @@
+﻿@model List<Student>
+<a class="nav-link text-dark" asp-area="" asp-controller="Studetn" asp-action="Create">Add Student</a>
+<br />
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th> 
+        <th>Image</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach(Student student in Model)
+    {
+        <tr>
+            <td>@student.StudentName</td>
+            <td>@student.StudentAge</td>
+            <td><img src="/UsersImages/@student.photoPath" width="50" height="30" /></td>
+
+            <td> <a href="/Studetn/Delete/@student.StudentId"> Delete @student.StudentName</a></td>
+        </tr>
+    }
+</table>
+<br />
+@ViewBag.userName
+<br />
+@ViewData["message"]
