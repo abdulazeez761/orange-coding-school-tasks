@@ -7852,11 +7852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SchoolAppMvcsCore\\SchoolAppMvcsCore.csproj",
+      "projectUniqueName": "D:\\orange-coding-school-tasks\\SchoolProject\\SchoolAppMvcsCore.csproj",
       "projectName": "SchoolAppMvcsCore",
-      "projectPath": "D:\\SchoolAppMvcsCore\\SchoolAppMvcsCore.csproj",
+      "projectPath": "D:\\orange-coding-school-tasks\\SchoolProject\\SchoolAppMvcsCore.csproj",
       "packagesPath": "C:\\Users\\abd82\\.nuget\\packages\\",
-      "outputPath": "D:\\SchoolAppMvcsCore\\obj\\",
+      "outputPath": "D:\\orange-coding-school-tasks\\SchoolProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abd82\\AppData\\Roaming\\NuGet\\NuGet.Config",

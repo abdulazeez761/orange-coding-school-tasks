@@ -1040,6 +1040,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UsersImages\2f2091bb-d362-4be1-a319-8d03d632d215StudentPhoto))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UsersImages\8184412e-5ad4-45dd-995f-3c45c2e4bcd7.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>SchoolAppMvcsCore</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SchoolAppMvcsCore</BasePath>
+      <RelativePath>UsersImages/8184412e-5ad4-45dd-995f-3c45c2e4bcd7.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UsersImages\8184412e-5ad4-45dd-995f-3c45c2e4bcd7.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UsersImages\9a9746c7-362c-4f6a-bc09-e98cb37fda32StudentPhoto))">
       <SourceType>Package</SourceType>
       <SourceId>SchoolAppMvcsCore</SourceId>
