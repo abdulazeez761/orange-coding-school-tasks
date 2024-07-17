@@ -7847,19 +7847,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abd82\\.nuget\\packages\\": {}
+    "C:\\Users\\Coding School\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\orange-coding-school-tasks\\mvc-first-task\\mvc-first-task.csproj",
+      "projectUniqueName": "C:\\Users\\Coding School\\Desktop\\orange-coding-school-tasks\\mvc-first-task\\mvc-first-task.csproj",
       "projectName": "mvc-first-task",
-      "projectPath": "D:\\orange-coding-school-tasks\\mvc-first-task\\mvc-first-task.csproj",
-      "packagesPath": "C:\\Users\\abd82\\.nuget\\packages\\",
-      "outputPath": "D:\\orange-coding-school-tasks\\mvc-first-task\\obj\\",
+      "projectPath": "C:\\Users\\Coding School\\Desktop\\orange-coding-school-tasks\\mvc-first-task\\mvc-first-task.csproj",
+      "packagesPath": "C:\\Users\\Coding School\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Coding School\\Desktop\\orange-coding-school-tasks\\mvc-first-task\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\abd82\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Coding School\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7929,7 +7934,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

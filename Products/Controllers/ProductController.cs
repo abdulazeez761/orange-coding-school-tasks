@@ -81,14 +81,15 @@ namespace Products.Controllers
             product.ProductImage = Path.GetFileName(fullPath);
             try
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
+            _context.Add(product);
+
+            await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
                 // Log the error (e.g., return a custom error view)
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-                return View(product);
+            return View(product);
             }
 
             return RedirectToAction(nameof(Index));

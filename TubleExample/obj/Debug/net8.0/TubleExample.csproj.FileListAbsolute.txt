@@ -1,0 +1,15 @@
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.AssemblyInfoInputs.cache
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.AssemblyInfo.cs
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.csproj.CoreCompileInputs.cache
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.sourcelink.json
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\bin\Debug\net8.0\TubleExample.exe
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\bin\Debug\net8.0\TubleExample.deps.json
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\bin\Debug\net8.0\TubleExample.runtimeconfig.json
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\bin\Debug\net8.0\TubleExample.dll
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\bin\Debug\net8.0\TubleExample.pdb
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.dll
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\refint\TubleExample.dll
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.pdb
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\TubleExample.genruntimeconfig.cache
+C:\Users\Coding School\Desktop\orange-coding-school-tasks\TubleExample\obj\Debug\net8.0\ref\TubleExample.dll
