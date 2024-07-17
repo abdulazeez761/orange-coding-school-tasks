@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SessionAndViewDataAndBag")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92e02e4d0f66fa0ca15eaa8de8f28419028b7687")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9eb1786bdf24c323fe48b13d5fbf90cc9fe805f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SessionAndViewDataAndBag")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SessionAndViewDataAndBag")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

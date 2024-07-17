@@ -27,7 +27,7 @@ namespace SessionAndViewDataAndBag.Controllers
              return RedirectToAction("Privacy");*/
 
 
-            /*HttpContext.Session.SetString("MySessionData", DateTime.Now.ToString());*/
+            // HttpContext.Session.SetString("MySessionData", DateTime.Now.ToString());
             return View();
 
         }
@@ -36,7 +36,7 @@ namespace SessionAndViewDataAndBag.Controllers
         public IActionResult Privacy()
         {
             // Retrieve Session data set in Index action
-            /*    ViewData["SessionValue"] = HttpContext.Session.GetString("MySessionData");*/
+            //ViewData["SessionValue"] = HttpContext.Session.GetString("MySessionData");
 
             return View();
         }
