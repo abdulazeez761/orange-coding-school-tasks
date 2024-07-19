@@ -1,0 +1,53 @@
+﻿@model (Products.Models.Categories ,IEnumerable<Products.Models.Product>)
+
+@{
+    ViewData["Title"] = @Model.Item1.CategoryName;
+}
+
+<h1>@Model.Item1.CategoryName products</h1>
+
+<!-- Search form -->
+<form asp-controller="Categories" asp-action="SearchPage" method="post" asp-route-id="@Model.Item1.CategoryID">
+    <p>
+        Product: <input type="text" name="productName" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<!-- Display validation errors -->
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+
+        }
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+}
+
+<div class="row">
+    @foreach (var item in Model.Item2)
+    {
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <img src="/Images/ProductsImages/@item.ProductImage" class="card-img-top" alt="@item.ProductName">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text">@item.ProductDescription</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a asp-controller="Product" asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-secondary">Details</a>
+                            <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-sm btn-outline-secondary">Delete</a>
+                        </div>
+                        <small class="text-muted">@item.ProductPrice.ToString("C")</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

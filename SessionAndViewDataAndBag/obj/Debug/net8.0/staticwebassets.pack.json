@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\SessionAndViewDataAndBag.bundle.scp.css"
     },
     {
+      "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\css\\dashboard.rtl.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.rtl.css"
+    },
+    {
       "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
     },
     {
       "Id": "D:\\orange-coding-school-tasks\\SessionAndViewDataAndBag\\wwwroot\\js\\site.js",

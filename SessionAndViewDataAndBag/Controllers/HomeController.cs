@@ -15,19 +15,24 @@ namespace SessionAndViewDataAndBag.Controllers
 
         public IActionResult Index()
         {
-            /*ViewData["MyTime"] = DateTime.Now.ToString();*/
-            ViewBag.MyTime = DateTime.Now.ToString(); // ViewBag is only a syntax shoger of viewdata
+            ViewData["MyTime"] = DateTime.Now.ToString();
+            //ViewBag.MyTime = DateTime.Now.ToString(); // ViewBag is only a syntax shoger of viewdata
 
-            /*view bag and view data can only send datat from controller to view what if I want to send dat from controller to another controller or action to action? 
+
+
+
+
+            /*view bag and view data can only send datat from controller to view what if I want to send dat from controller to another controller or action to action?
              * TempData is the key
              * on important key is that temp data only services for only one request when I send anotehr request it becomes null
              * what If Iwant to to least as much as posseble? the key is session
              */
-            /* TempData["MyTimeTemp"] = DateTime.Now.ToString();
-             return RedirectToAction("Privacy");*/
+
+            // TempData["MyTimeTemp"] = DateTime.Now.ToString();
+            // return RedirectToAction("Privacy");
 
 
-            // HttpContext.Session.SetString("MySessionData", DateTime.Now.ToString());
+            HttpContext.Session.SetString("MySessionData", DateTime.Now.ToString());
             return View();
 
         }
@@ -36,7 +41,7 @@ namespace SessionAndViewDataAndBag.Controllers
         public IActionResult Privacy()
         {
             // Retrieve Session data set in Index action
-            //ViewData["SessionValue"] = HttpContext.Session.GetString("MySessionData");
+            ViewData["SessionValue"] = HttpContext.Session.GetString("MySessionData");
 
             return View();
         }

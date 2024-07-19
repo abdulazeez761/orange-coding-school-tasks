@@ -1,0 +1,35 @@
+﻿@model Teacher
+
+<div class="container">
+    <form action="Create" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="TeacherName" class="form-control" placeholder="Enter your name.." />
+            </div>
+            <div class="col-md-6">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="TeacherAge" class="form-control" placeholder="Enter your age.." />
+            </div>
+        </div>
+        <div>
+            <label asp-for="Role"></label>
+            <input asp-for="Role" />
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="active">Active:</label>
+                <div class="form-check">
+                    <input type="checkbox" id="active" name="IsActive" class="form-check-input" value="true" />
+                    <label class="form-check-label" for="active">Is active?</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
