@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{785776A1-7C89-4E8D-8973-F9F8D9C652EA}|mvc-first-task.csproj|d:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785776A1-7C89-4E8D-8973-F9F8D9C652EA}|mvc-first-task.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{785776A1-7C89-4E8D-8973-F9F8D9C652EA}|mvc-first-task.csproj|d:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{785776A1-7C89-4E8D-8973-F9F8D9C652EA}|mvc-first-task.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,44 +27,35 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "1cc0efcd-9c85-4679-9423-a0d5e2f0c6eb",
-        "Display": 0,
-        "X": 52,
-        "Y": 182,
-        "Width": 966,
-        "Height": 590,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T12:21:34.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\orange-coding-school-tasks\\3-tasks\\mvc-first-task-part-two\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAowCwAAAArAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T16:10:50.468Z",
+              "WhenOpened": "2024-07-20T12:15:07.117Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using mvc_first_task.ActionFilters;
 using mvc_first_task.Context;
 using mvc_first_task.Models;
 
@@ -121,12 +122,14 @@ namespace mvc_first_task.Controllers
         }
 
         // GET: Departments/Delete/5
+        [RoleValidation("Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
+
 
             var department = await _context.Departments
                 .FirstOrDefaultAsync(m => m.DepartmentId == id);

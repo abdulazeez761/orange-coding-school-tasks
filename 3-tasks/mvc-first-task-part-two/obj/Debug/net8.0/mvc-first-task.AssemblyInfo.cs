@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mvc-first-task")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+170034d3c776acb66454b7970b5cb6de263e6492")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a388d1eb176fc9506b8561115d6a65931196255c")]
 [assembly: System.Reflection.AssemblyProductAttribute("mvc-first-task")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mvc-first-task")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using mvc_first_task.ActionFilters;
 using mvc_first_task.Context;
 using mvc_first_task.Models;
-using System.Data;
 using System.Diagnostics;
 
 namespace mvc_first_task.Controllers
@@ -16,13 +16,9 @@ namespace mvc_first_task.Controllers
             _context = context;
         }
 
+        [MultipleRoles("Manager", "Employee")]
         public IActionResult Index()
         {
-
-            var dataFromSession = HttpContext.Session.GetString("userInfo");
-
-            if (dataFromSession is null)
-                return RedirectToAction("Index", "Login");
 
             var dataFromCookies = Request.Cookies["role"];
             if (dataFromCookies == Role.Employee.ToString()) return RedirectToAction("EmployeeHomePage", "Employees");
@@ -44,6 +40,8 @@ namespace mvc_first_task.Controllers
                 DepartmentId = 123123,
                 Department = new Department()
                 {
+                    DepartmentId = 1,
+                    DepartmentName = "Test",
 
                 },
                 EmployeeId = 0,

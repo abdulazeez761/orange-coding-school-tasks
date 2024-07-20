@@ -17,6 +17,10 @@ namespace LoginUsingCookiesAndSessions.Controllers
         {
             return View();
         }
+        public IActionResult NotAuth()
+        {
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Index(LoginViewModel formData)
@@ -35,7 +39,6 @@ namespace LoginUsingCookiesAndSessions.Controllers
                 HttpOnly = true
             };
             Response.Cookies.Append("role", role, cookieOptions);
-            HttpContext.Session.SetString("userInfo", firstName);
             if (role == Role.Employee.ToString()) return RedirectToAction("EmployeeHomePage", "Employees");
             else return RedirectToAction("Index", "Managers");
         }
@@ -44,9 +47,9 @@ namespace LoginUsingCookiesAndSessions.Controllers
 
 
             Response.Cookies.Delete("role");
-            HttpContext.Session.Clear();
             return RedirectToAction("Index", "Login");
         }
+
 
     }
 }
